@@ -62,8 +62,8 @@ export default function TermsOfService() {
           <h2 style={hd}>1. Eligibility and account</h2>
           <p style={pg}>
             You must be at least 18 years old to use FitCrave. You are responsible for the accuracy of information you provide
-            and for activity on your account. Keep your phone, email, and Google sign-in secure. You may request deletion of
-            your account at any time from the app or our{" "}
+            and for activity on your account. Keep your phone, email, and Google sign-in secure. You may delete your account
+            at any time from Profile → Delete account in the FitCrave app, or via our{" "}
             <Link to="/account-deletion" style={link}>account deletion page</Link>.
           </p>
 

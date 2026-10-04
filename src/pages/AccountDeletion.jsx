@@ -57,12 +57,25 @@ export default function AccountDeletion() {
           </div>
 
           <p style={pg}>
-            This page explains how to request deletion of your <strong style={{ color: t.tx }}>FitCrave</strong> consumer
+            This page explains how to delete your <strong style={{ color: t.tx }}>FitCrave</strong> consumer
             account or your <strong style={{ color: t.tx }}>FitCrave Partner</strong> delivery account. You do not need to
             sign in to read this page.
           </p>
 
-          <h2 style={hd}>How to request deletion</h2>
+          <h2 style={hd}>FitCrave consumer app (recommended)</h2>
+          <p style={pg}>
+            If you use the FitCrave mobile app, you can delete your account permanently in the app without emailing support:
+          </p>
+          <ol style={{ margin: "0 0 20px 20px", padding: 0 }}>
+            <li style={li}>Open FitCrave and sign in.</li>
+            <li style={li}>
+              Go to <strong style={{ color: t.tx }}>Profile</strong> → <strong style={{ color: t.tx }}>Delete account</strong>
+              {" "}(also available under Help &amp; Support).
+            </li>
+            <li style={li}>Confirm deletion. Your account and associated personal data are removed.</li>
+          </ol>
+
+          <h2 style={hd}>Email request (website / Partner / no app access)</h2>
           <ol style={{ margin: "0 0 20px 20px", padding: 0 }}>
             <li style={li}>
               Send an email to{" "}

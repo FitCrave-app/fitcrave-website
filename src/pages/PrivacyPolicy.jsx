@@ -153,19 +153,22 @@ export default function PrivacyPolicy() {
 
           <h2 style={hd}>4. Retention and security</h2>
           <p style={pg}>
-            We keep account and app data while your account is open. After a verified deletion request we delete or anonymize
-            personal data as described on the{" "}
+            We keep account and app data while your account is open. When you delete your account in the FitCrave app
+            (or after a verified email deletion request), we delete or anonymize personal data as described on the{" "}
             <Link to="/account-deletion" style={link}>account deletion page</Link>
-            , typically within 7 business days, except backups (up to 30 days) and data we must keep for legal, tax, or fraud
-            reasons. We use HTTPS in transit and restrict staff access. No method of storage is 100% secure.
+            , typically promptly for in-app deletion or within 7 business days for email requests, except backups (up to 30 days)
+            and data we must keep for legal, tax, or fraud reasons. We use HTTPS in transit and restrict staff access. No method
+            of storage is 100% secure.
           </p>
 
           <h2 style={hd}>5. Your rights and choices</h2>
           <p style={pg}>
             You can access and update profile, meal, and workout preferences in the consumer app. Delivery partners can go
             offline from FitCrave Partner. You can disconnect Health Connect or Apple Health, deny camera, location, or
-            notification permission, and log out. You may request a copy or correction of personal data, or deletion of your
-            account, from Profile → Delete account (consumer), the links in FitCrave Partner, this website, or{" "}
+            notification permission, and log out. You may delete your consumer account in the app from Profile → Delete
+            account (or Help &amp; Support → Delete account). You may also request deletion via the{" "}
+            <Link to="/account-deletion" style={link}>account deletion page</Link>
+            {" "}or{" "}
             <a href={`mailto:${SUPPORT}`} style={link}>{SUPPORT}</a>. You can report community posts and comments and block users in the app.
           </p>
 
