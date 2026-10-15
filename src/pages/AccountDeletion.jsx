@@ -89,8 +89,8 @@ export default function AccountDeletion() {
               <strong style={{ color: t.tx }}>FitCrave Partner account deletion request</strong> (delivery).
             </li>
             <li style={li}>
-              In your message, include how you sign in. Consumer: phone number, Google, or Apple. Partner: the 10-digit
-              mobile number used as Partner ID, plus your name and kitchen if you know them.
+              In your message, include how you sign in. Consumer: phone number, Google, or Apple. Partner: the mobile
+              number you sign in with, plus your name and kitchen if you know them.
             </li>
             <li style={li}>
               We will verify your request and complete account deletion within{" "}
@@ -100,10 +100,11 @@ export default function AccountDeletion() {
 
           <h2 id="delivery-partner" style={hd}>FitCrave Partner accounts</h2>
           <p style={pg}>
-            Deleting a Partner account removes or anonymizes your delivery-partner profile (name, phone, PIN hash, vehicle,
-            kitchen assignment, online status, and FCM token). Proof-of-delivery photos and location points already attached
-            to completed orders may be retained with the order for food-safety, refund, and fraud records, or anonymized.
-            Kitchen managers can also deactivate your login without a full deletion.
+            Deleting a Partner account removes or anonymizes your delivery-partner profile (name, phone, sign-in record,
+            vehicle, kitchen assignment, online status, last location, bank details, driving licence and selfie, and push
+            token). Proof-of-delivery photos and location points already attached to completed orders may be retained with the
+            order for food-safety, refund, and fraud records, or anonymized. Per-trip pay and payout records are kept for as
+            long as tax law requires. Kitchen managers can also deactivate your login without a full deletion.
           </p>
 
           <div style={{ background: t.bg2, border: `1px solid ${t.bd}`, borderRadius: 14, padding: "20px 22px", marginBottom: 24 }}>
@@ -123,7 +124,7 @@ export default function AccountDeletion() {
             <li style={li}>Community data tied to your account on our servers (for example, MongoDB profile, posts, and comments linked to your Firebase user ID).</li>
             <li style={li}>Media you uploaded for community features, where stored in our storage systems (for example, Firebase Cloud Storage).</li>
             <li style={li}>Meal, workout, and health data associated with your account on our backend services.</li>
-            <li style={li}>FitCrave Partner profile data (name, phone/Partner ID, PIN hash, vehicle, kitchen assignment, online status, and push token).</li>
+            <li style={li}>FitCrave Partner profile data (name, phone, sign-in record, vehicle, kitchen assignment, online status, last location, bank details, driving licence, selfie, and push token).</li>
           </ul>
 
           <h2 style={hd}>What we may retain</h2>
