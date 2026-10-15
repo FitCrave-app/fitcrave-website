@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
               <span style={{ fontFamily: SF, fontStyle: "italic", ...acT }}>Policy</span>
             </h1>
             <p style={{ fontFamily: SM, fontSize: ".68rem", color: t.tx3, marginTop: 12 }}>
-              Last updated: September 2026 · FitCrave Pvt. Ltd.
+              Last updated: October 2026 · FitCrave Pvt. Ltd.
             </p>
           </div>
 
@@ -86,17 +86,24 @@ export default function PrivacyPolicy() {
           </p>
           <h3 id="delivery-partner" style={sub}>1.3a FitCrave Partner (delivery) app</h3>
           <p style={pg}>
-            If you use FitCrave Partner as a delivery rider, we collect the data needed to assign and complete bowl deliveries:
+            If you use FitCrave Partner as a delivery rider, we collect the data needed to sign you in, assign and complete
+            deliveries, pay you, and keep you safe:
           </p>
           <ul style={{ margin: "0 0 20px 20px", padding: 0 }}>
-            <li style={li}>Account: full name, 10-digit mobile number (Partner ID), vehicle type, assigned kitchen, and a hashed 4-digit PIN. The PIN is verified on our servers; we do not store it in plain text.</li>
-            <li style={li}>Precise location while you have an active delivery (order status "dispatched"), typically every 10 seconds, so the customer can track their order. Sharing stops when the delivery is completed or marked undeliverable. Location is requested only after an in-app explanation, and only while the app is in use for that delivery.</li>
+            <li style={li}>Account: mobile number (verified by a one-time SMS code), full name, vehicle type and assigned kitchen.</li>
+            <li style={li}>Sign-up and payout details: bank account number, IFSC code and account holder name, driving licence number and photo, and a selfie, so your kitchen can verify you and we can pay you. We do not collect Aadhaar.</li>
+            <li style={li}>Precise location while you are online. When you go online the app shows a persistent "You're online" notification and shares your location with our servers about every 10–15 seconds, including when the screen is off or the app is in the background. Sharing stops when you go offline or log out. Your kitchen sees where online riders are; a customer sees your location only while their order is out for delivery. We do not collect location while you are offline and do not use the "background location" permission.</li>
+            <li style={li}>Order activity: when you accept, reach the kitchen, pick up, reach the customer and deliver, cash or UPI you collect, ratings you give customers, and the pay calculated for each trip (base, distance and waiting time) and your weekly payouts.</li>
             <li style={li}>Camera photos you take as proof of delivery or when a drop-off cannot be completed. We do not request access to your full photo library.</li>
-            <li style={li}>Order events you submit (picked up, cash/UPI collected, delivered, undeliverable) and a push-notification token so we can alert you to assigned orders.</li>
+            <li style={li}>Emergency (SOS): if you press SOS, the app calls 112 and sends your current location, name and phone number to your kitchen so staff can reach you.</li>
+            <li style={li}>Device: a push-notification token so new orders can ring your phone (including full-screen alerts if you allow them), and crash reports (Firebase Crashlytics) linked to your rider ID so we can fix problems.</li>
           </ul>
           <p style={pg}>
-            Partner location and delivery photos are shared with the assigned kitchen and, for live tracking, with the customer
-            for that order only. We do not use Partner data for advertising.
+            Your name, phone number and location are shared with your kitchen; your first name, vehicle and live location are
+            shown to the customer of an order you are delivering. While you are delivering an order you can see that
+            customer's phone number (from pickup until 30 minutes after delivery) so you can call them; the app does not
+            store it. Bank and identity details are used only for verification and payouts and are visible only to FitCrave
+            staff who handle them. We do not use Partner data for advertising.
           </p>
           <h3 style={sub}>1.4 Camera and media you choose</h3>
           <p style={pg}>
@@ -111,7 +118,10 @@ export default function PrivacyPolicy() {
           </p>
           <h3 style={sub}>1.6 Orders and payments</h3>
           <p style={pg}>
-            If you order food we collect delivery name, phone, address, city, pin code, cart contents, and order status.
+            If you order food we collect delivery name, phone, address (including the pinned map location), city, pin code,
+            cart contents, and order status. The rider delivering your order can see your phone number from pickup until 30
+            minutes after delivery so they can call you, and sees your live delivery address; the rider app does not store
+            your number.
             Payment is handled by Cashfree. We receive payment status and identifiers needed to confirm the order; we do not
             store your full card or UPI PIN.
           </p>
@@ -144,7 +154,7 @@ export default function PrivacyPolicy() {
             <li style={li}>Google Cloud (API hosting) and MongoDB Atlas (community profiles, posts, comments).</li>
             <li style={li}>Google Gemini / generative AI providers to create plans, meal-photo estimates, and coach replies using the context you have in the app.</li>
             <li style={li}>Cashfree for payments; Google Maps for order tracking maps; Open Food Facts for packaged-food lookup.</li>
-            <li style={li}>Kitchen and delivery partners, only order and drop-off details required to fulfill a bowl order.</li>
+            <li style={li}>Kitchen and delivery partners, only order and drop-off details required to fulfill a bowl order (including your phone number for the rider, from pickup until 30 minutes after delivery).</li>
           </ul>
           <p style={pg}>
             We may disclose information if required by law or to protect users from fraud or serious harm. Community posts
@@ -164,7 +174,8 @@ export default function PrivacyPolicy() {
           <h2 style={hd}>5. Your rights and choices</h2>
           <p style={pg}>
             You can access and update profile, meal, and workout preferences in the consumer app. Delivery partners can go
-            offline from FitCrave Partner. You can disconnect Health Connect or Apple Health, deny camera, location, or
+            offline at any time from FitCrave Partner, which stops location sharing, and can ask their kitchen or support
+            to update bank or vehicle details or close their rider account. You can disconnect Health Connect or Apple Health, deny camera, location, or
             notification permission, and log out. You may delete your consumer account in the app from Profile → Delete
             account (or Help &amp; Support → Delete account). You may also request deletion via the{" "}
             <Link to="/account-deletion" style={link}>account deletion page</Link>
